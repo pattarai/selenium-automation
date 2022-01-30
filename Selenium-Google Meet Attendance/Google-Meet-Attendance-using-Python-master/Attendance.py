@@ -18,6 +18,7 @@ if __name__ == '__main__':
     gmail_id = input('Enter your gmail id: ')
     gmail_password = input('Enter your gmail password: ')
     meet_link = input('Paste the link of the Google Meet: ')
+    time = input('Attendance tracking time in seconds: ')
 
     # Some necessary things for automation with google driver
     opt = Options()
@@ -73,7 +74,7 @@ if __name__ == '__main__':
     sleep(1)
     driver.find_element_by_xpath(
         '/html/body/div[1]/c-wiz/div[1]/div/div[9]/div[3]/div[10]/div[1]/div/div/div/button').click()
-    sleep(4)
+    sleep(int(time))
     driver.find_element_by_xpath(
         '/html/body/div[1]/c-wiz/div[1]/div/div[9]/div[3]/div[10]/div[1]/div/div/div/button').click()
     chwnd = driver.window_handles[1]
