@@ -1,4 +1,4 @@
-# Selenium Automation ✨
+# Selenium Automation 🕶
 
 ### Description
 Automate any useful browser activity.
